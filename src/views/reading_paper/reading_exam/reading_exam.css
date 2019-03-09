@@ -1,0 +1,248 @@
+.exam_reading {
+    background-color: #91999e;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.exit {
+
+}
+
+.exam_reading /deep/ .el-progress-bar__innerText {
+    color: black;
+}
+
+/*.sub_problems div{*/
+/*margin: 0px 10px 10px 10px;*/
+/*background-color: #11b95c;*/
+/*!*width: 80%;*!*/
+/*height: 40px;*/
+/*text-align: center;*/
+
+/*}*/
+.edit_score {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    width: 100px;
+    background-color: #8cc5ff;
+    opacity: 0.8;
+    padding: 30px 15px 30px 15px;
+}
+
+#drag {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    -webkit-box-shadow: 0 0 1px 2px #000;
+    -moz-box-shadow: 0 0 1px 2px #000;
+    box-shadow: 0 0 1px 2px #8b8b8b;
+    border-radius: 2px;
+    background: #f3f3f3;
+    /* nzq */
+    padding: 0 5px 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/* nzq 开始*/
+.drag-handle .el-row button {
+    margin: 5px 0;
+}
+
+.drag-handle .el-row button,
+.drag-handle .el-row button span {
+    padding: 0;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#drag .drag-input {
+    margin-bottom: 10px;
+    color: white;
+}
+
+#drag button {
+    height: 30px;
+    line-height: 3px;
+}
+
+#drag button.drag-sure {
+    background-color: #66b1ff;
+    color: white;
+}
+
+#drag input {
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #cfcfcf;
+    width: calc(100% - 80px);
+    margin-right: 1px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.drag-title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #3a8ee6;
+    margin: 5px;
+    margin-top: 4px;
+}
+
+.cur-score {
+    text-align: left;
+    padding-left: 15px;
+    margin: 5px 0;
+    color: #4b4d50;
+}
+
+.cur-score span {
+    color: red;
+    font-size: 16px;
+}
+
+/* nzq结束 */
+/* nzq 评阅质量 */
+.el-dialog__body {
+    transform: translateY(-20px);
+}
+
+.evaluate-table-average {
+    font-size: 18px;
+    top: 30px;
+    padding: 0;
+    margin: 0;
+    color: #303133;
+}
+
+.evaluate-table-average span {
+    color: #c13531;
+    font-size: 22px;
+}
+
+.evaluate-table-average p {
+    margin: 0 0 10px 0;
+}
+
+.evaluate-table {
+    height: 600px;
+    display: block;
+
+}
+
+div.crop {
+    text-align: center;
+    position: relative;
+
+}
+
+/*div.crop img {*/
+/*margin: -200px -200px 0 0;*/
+/*}*/
+#img_paper_0,
+#img_paper_1 {
+    display: inline-block;
+}
+
+/deep/ .el-scrollbar__wrap {
+    overflow-x: hidden;
+}
+
+/deep/ .el-scrollbar__thumb {
+    background-color: #d9d9d9;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+    /*background-color: #ddd;*/
+}
+
+/*滑块*/
+::-webkit-scrollbar-thumb {
+    background-color: #5e7382;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+/*滑道*/
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #333;
+    border-radius: 8px;
+    width: 8px;
+
+}
+
+
+#img1,#img2,#img3{
+    position: relative;
+    display: table;
+    margin: 0 auto;
+
+
+}
+#img1 div{
+    position: absolute;
+}
+#img2 div{
+    position: absolute;
+}
+#img3 div{
+    position: absolute;
+}
+
+
+.el-form-item__label{
+    color: white !important;
+}
+
+
+.allok{
+    background-image: url('../../../../static/img/dui1.png');
+    background-repeat:no-repeat; background-size:100% 100%;
+    z-index: 100;
+}
+.fail{
+    background-image: url('../../../../static/img/cuo.png');
+    background-repeat:no-repeat; background-size:100% 100%;
+    z-index: 100;
+}
+.banok{
+    background-image: url('../../../../static/img/duicuo.png') ;
+    background-repeat:no-repeat; background-size:100% 100%;
+
+    /*z-index: 100 !important;*/
+
+}
+.noes{
+    z-index: -1;
+}
+.false{
+    background-image: url('../../../../static/img/false.png') ;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #a4da89;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:     #a4da89;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:     #a4da89;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:     #a4da89;
+}
+.re_ser{
+     background-color: #5e7382 !important;
+ }
