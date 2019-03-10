@@ -5,7 +5,7 @@
         </el-row>
         <div style="text-align: center; width: 600px; margin: 0 auto">
 
-            <img src="../../static/img/wel.png" style="margin: 0 auto;">
+    
 
         </div>
 

@@ -137,7 +137,7 @@
     export default {
         data() {
             return {
-                sysName: 'AI阅卷管理系统',
+                sysName: '管理系统',
                 collapsed: false,
                 sysUserName: '',
                 sysUserAvatar: '',

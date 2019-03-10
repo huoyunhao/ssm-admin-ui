@@ -2,7 +2,7 @@
     <div id="login">
         <el-form :model="loginForm" :rules="rules2" ref="loginForm" label-position="left" label-width="0px"
                  class="demo-ruleForm login-container">
-            <h3 class="title">AI智能阅卷系统--管理登录</h3>
+            <h3 class="title">管理登录</h3>
             <el-form-item prop="account">
                 <el-input type="text" v-model="loginForm.account" auto-complete="off"
                           placeholder="请输入账号"></el-input>

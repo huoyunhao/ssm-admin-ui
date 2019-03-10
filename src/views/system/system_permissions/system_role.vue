@@ -29,8 +29,8 @@
 
             <el-table-column label="操作" width="600">
                 <template slot-scope="scope">
-                    <el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-                    <el-button  type="primary" size="small"  @click="view_menu(scope.row)">查看角色菜单</el-button>
+                    <el-button size="small" @click="handleEdit(scope.$index, scope.row)">分配权限</el-button>
+                    <el-button  type="primary" size="small"  @click="view_menu(scope.row)">拥有权限</el-button>
                     <!--<el-button  type="primary" size="small"  @click="view_menu(scope.row)">分配角色菜单</el-button>-->
                     <el-button type="danger" size="small" @click="handleDel(scope.$index, scope.row)">删除</el-button>
                 </template>
