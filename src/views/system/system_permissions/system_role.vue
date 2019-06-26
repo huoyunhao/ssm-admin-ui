@@ -109,7 +109,7 @@
             <!--</el-cascader>-->
             <el-tree
                     :data="menus"
-                    show-checkbox
+
 
 
                     :props="defaultProps"
@@ -202,11 +202,6 @@
                     label: 'name',
 
                 },
-
-
-
-
-
             }
         },
         methods: {
@@ -415,6 +410,7 @@
                 get_role_menu(row.roleId).then((res) =>{
                     this.menus = res.data.msg;
                     this.menu_visible = true;
+
 
 
                 })

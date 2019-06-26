@@ -60,12 +60,12 @@ axios.interceptors.response.use(
         type:'error'
       })
     }
-    if(response.data.code=='400'|| response.status=="400"){
-      Vue.prototype.vm.$message({
-        message:'系统繁忙',
-        type:'error'
-      })
-    }
+    // if(response.data.code=='400'|| response.status=="400"){
+    //   Vue.prototype.vm.$message({
+    //     message:'系统繁忙',
+    //     type:'error'
+    //   })
+    // }
     if(response.data.code=='405'|| response.status=="405"){
         Vue.prototype.vm.$message({
           message:'系统繁忙',
