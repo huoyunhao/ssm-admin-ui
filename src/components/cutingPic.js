@@ -24,7 +24,7 @@ let position2 = {
 // https://www.jianshu.com/p/6fe06667b748
 function cutingPic (url, position1, position2,elem,labels) {
     var p = new Promise(function(resolve, reject){
-        url = "http://120.79.250.60:80/aies/img?path=" + url
+        url = "http://120.79.250.60:80/ssm/img?path=" + url
         var img = new Image();
         img.crossOrigin = "";
         img.onload = function () {

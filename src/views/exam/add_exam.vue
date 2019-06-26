@@ -25,7 +25,7 @@
         <el-form-item label="考生导入">
             <el-upload
                     class="upload-demo"
-                    :action="this.upload_url+'/aies/excel/stuexam'"
+                    :action="this.upload_url+'/ssm/excel/stuexam'"
 
                     :on-success="upd2"
 

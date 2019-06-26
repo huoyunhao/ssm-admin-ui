@@ -11,12 +11,12 @@
                         <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
                         <div ref="imgSlot" id="bigDiv" :style="'height:'+scaleHeight+'px;border:1px solid #ebeef5;margin:0 auto;overflow:auto'"  >
                             <div id="canvas" @mouseleave="mymouseleave"  @mouseup="mymouseup" @mousemove="mymousemove" >
-                                <div class="page_div" :key="index" :style="index>0?'display:none':''" v-for="(item,index) in imgList"><img class='imgList' :src="base+'/aies/'+item+''" :style="'height:'+scaleHeight+'px'" ></div>
+                                <div class="page_div" :key="index" :style="index>0?'display:none':''" v-for="(item,index) in imgList"><img class='imgList' :src="base+'/ssm/'+item+''" :style="'height:'+scaleHeight+'px'" ></div>
                             </div>
                             
-                            <!-- <div class="page_div" ><img class='imgList' :src="base+'/aies/'+imgList.length>1?imgList[1]:''" :style="'height:'+scaleHeight+'px'" ></div> -->
+                            <!-- <div class="page_div" ><img class='imgList' :src="base+'/ssm/'+imgList.length>1?imgList[1]:''" :style="'height:'+scaleHeight+'px'" ></div> -->
                             <!-- <div id="imgDiv"  style="width:800px">
-                                <img id="sourceImg" :src="'http://10.131.7.138:8080/aies/'+sourceUrl" style="height:800px" >
+                                <img id="sourceImg" :src="'http://10.131.7.138:8080/ssm/'+sourceUrl" style="height:800px" >
                             </div> -->
                         </div>
                         </el-col>
@@ -64,7 +64,7 @@
                                 <!-- </el-popover> -->
                         </el-col>
                     </el-row>
-                    <div style="display:none"><img id="source" :src="base+'/aies/'+imgList[0]"></div>
+                    <div style="display:none"><img id="source" :src="base+'/ssm/'+imgList[0]"></div>
                 </div>
             </el-col>
             <el-col :xs="14" :sm="12" :md="10" :lg="9" :xl="7" offset="1">
@@ -1393,9 +1393,9 @@ export default {
                 //console.log(that.$refs)
                 this.scaleHeight=this.minHeight;
                 // if(i==0){
-                //     $(that.$refs.imgSlot).append(`<div class="page_div"><img class='imgList' src="${this.base}/aies/${this.imgList[i]}" style="height:${this.scaleHeight}px  " ><div>`)
+                //     $(that.$refs.imgSlot).append(`<div class="page_div"><img class='imgList' src="${this.base}/ssm/${this.imgList[i]}" style="height:${this.scaleHeight}px  " ><div>`)
                 // }else{
-                //     $(that.$refs.imgSlot).append(`<div class="page_div" style="display:none"><img class='imgList' src="${this.base}/aies/${this.imgList[i]}" style="height:${this.scaleHeight}px;" ><div>`)
+                //     $(that.$refs.imgSlot).append(`<div class="page_div" style="display:none"><img class='imgList' src="${this.base}/ssm/${this.imgList[i]}" style="height:${this.scaleHeight}px;" ><div>`)
                 // }
                 
             }

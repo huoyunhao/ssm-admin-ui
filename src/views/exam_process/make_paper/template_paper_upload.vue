@@ -23,7 +23,7 @@
                 </el-form-item>
                 <el-form-item label="试卷模板图片">
                     <el-upload
-                            :action="baseUrl+'/aies/templetimg'"
+                            :action="baseUrl+'/ssm/templetimg'"
                             list-type="picture-card"
                             :on-preview="handlePictureCardPreview"
                             :on-remove="handleRemove"

@@ -6,7 +6,7 @@
                 <el-form-item label="上传试卷">
                     <el-upload
                             class="upload-demo"
-                            :action="this.upload_url+'/aies/paper'"
+                            :action="this.upload_url+'/ssm/paper'"
 
 
 

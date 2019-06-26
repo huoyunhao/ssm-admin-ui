@@ -7,13 +7,13 @@
                         <div class="splitView">
                     <div  id="bigDiv" style="width:1156px;height:800px;border:1px solid #ebeef5;margin:0 auto;overflow:hidden"  >
                         <div :class="index==0?'imgshow':'imghide'" class="page_img"  v-for="(item,index) in imgList" :key="index">
-                            <img :src="base+'/aies/img?path='+item" style="margin: 0 auto;display: block;height:800px" class="imgChild" crossOrigin="Anonymous" >
+                            <img :src="base+'/ssm/img?path='+item" style="margin: 0 auto;display: block;height:800px" class="imgChild" crossOrigin="Anonymous" >
                         </div>
                     <div class="previewSlot">
                         <div class="move_div"></div>
                     </div>
                         <!-- <div id="imgDiv"  style="width:800px">
-                            <img id="sourceImg" :src="'http://10.131.7.138:8080/aies/'+sourceUrl" style="height:800px" >
+                            <img id="sourceImg" :src="'http://10.131.7.138:8080/ssm/'+sourceUrl" style="height:800px" >
                         </div> -->
 
                     </div>
@@ -74,11 +74,11 @@
                 </div>
                 </el-col>
 
-                <div style="display:none"><img id="source" :src="base+'/aies/'+imgList[0]"></div>
+                <div style="display:none"><img id="source" :src="base+'/ssm/'+imgList[0]"></div>
 
                     <el-dialog width="80%" title="拆分扫描块" :visible.sync="dialogTableVisible"  @opened="dialogOpened" @close="dialogClose">
-                    <!-- <img :src="base+'/aies/'+sourceUrl" style="height:800px" > -->
-                    <div class="imgSlot" @mouseleave="mymouseleave"  ><div :class="index==0?'imgshow':'imghide'" class="page_div"  v-for="(item,index) in imgList" :key="index"><img  style="height:800px;margin:0 auto" :src="base+'/aies/img?path='+item" class="imgList" ></div></div>
+                    <!-- <img :src="base+'/ssm/'+sourceUrl" style="height:800px" > -->
+                    <div class="imgSlot" @mouseleave="mymouseleave"  ><div :class="index==0?'imgshow':'imghide'" class="page_div"  v-for="(item,index) in imgList" :key="index"><img  style="height:800px;margin:0 auto" :src="base+'/ssm/img?path='+item" class="imgList" ></div></div>
                     <span slot="footer" class="dialog-footer">
                         <el-tooltip class="item" effect="light" content="提交" placement="bottom">
                             <el-button style="margin: 5px 5px"  type="success" icon="el-icon-check" circle @click="submit"></el-button>
@@ -1038,7 +1038,7 @@ export default {
                               let path= res.data.fragment.fragmentImg;
                               let div=document.createElement("div");
                               let image=document.createElement("img");
-                              image.src=that.base+"/aies/"+path;
+                              image.src=that.base+"/ssm/"+path;
                               image.onload=function(){
                                 div.style.width=(dataTree[i][j].cuttingX2-dataTree[i][j].cuttingX1)*800/image.naturalHeight+"px";
                                 div.style.height=(dataTree[i][j].cuttingY2-dataTree[i][j].cuttingY1)*800/image.naturalHeight+"px";
@@ -1069,7 +1069,7 @@ export default {
                         let path= res.data.fragment.fragmentImg;
                         let div=document.createElement("div");
                         let image=document.createElement("img");
-                        image.src=that.base+"/aies/"+path;
+                        image.src=that.base+"/ssm/"+path;
                         if(cnt==that.childModelData[tag].mergeItems.length-1){
                           image.onload=function(){
                             div.style.width=(obj.cuttingX2-obj.cuttingX1)*(800)/image.naturalHeight+"px";

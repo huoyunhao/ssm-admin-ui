@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </div>
-            <div style="display:none"><img id="source" :src="'http://120.79.250.60/aies/'+imgList[0]"></div>
+            <div style="display:none"><img id="source" :src="'http://120.79.250.60/ssm/'+imgList[0]"></div>
         </div>
 </template>
 <script>
@@ -336,9 +336,9 @@ export default {
             for(let i=0;i<that.imgList.length;i++){
                 //console.log(that.$refs)
                 if(i==0){
-                    $(that.$refs.imgSlot).append(`<div class="page_div"><img class='imgList' src="http://120.79.250.60/aies/${this.imgList[i]}" style="height:800px  " ><div>`)
+                    $(that.$refs.imgSlot).append(`<div class="page_div"><img class='imgList' src="http://120.79.250.60/ssm/${this.imgList[i]}" style="height:800px  " ><div>`)
                 }else{
-                    $(that.$refs.imgSlot).append(`<div class="page_div" style="display:none"><img class='imgList' src="http://120.79.250.60/aies/${this.imgList[i]}" style="height:800px;" ><div>`)
+                    $(that.$refs.imgSlot).append(`<div class="page_div" style="display:none"><img class='imgList' src="http://120.79.250.60/ssm/${this.imgList[i]}" style="height:800px;" ><div>`)
                 }
                 
             }

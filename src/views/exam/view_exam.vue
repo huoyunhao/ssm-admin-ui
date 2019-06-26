@@ -780,7 +780,7 @@
                     // window.location.href="http://47.94.146.246"+res.data.url;
                     // window.open ("http://47.94.146.246"+res.data.url, "newwindow", "height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no")
                     // window.open("http://47.94.146.246"+res.data.url);
-                    this.tmp_url = "http://120.79.250.60/aies"+res.data.url;
+                    this.tmp_url = "http://120.79.250.60/ssm"+res.data.url;
 
                 })
 

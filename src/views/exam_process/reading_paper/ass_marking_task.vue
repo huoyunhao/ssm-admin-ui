@@ -283,7 +283,7 @@
                         dowd_marking(sessionStorage.getItem('exam_small_id')).then((res) =>{
 
                             // console.log(res);
-                            this.dowd_url = baseUrl()+'/aies/downloadexcel/'+res.data.msg;
+                            this.dowd_url = baseUrl()+'/ssm/downloadexcel/'+res.data.msg;
                             this.view_dowd = true;
 
                         })

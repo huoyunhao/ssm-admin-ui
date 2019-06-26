@@ -18,7 +18,7 @@
                                 </div>
                             </div>
                             <!-- <div id="imgDiv"  style="width:800px">
-                                <img id="sourceImg" :src="'http://10.131.7.138:8080/aies/'+sourceUrl" style="height:800px" >
+                                <img id="sourceImg" :src="'http://10.131.7.138:8080/ssm/'+sourceUrl" style="height:800px" >
                             </div> -->
 
                         </div>
@@ -70,7 +70,7 @@
                         </el-table>
 
                     </div>
-                    <div style="display:none"><img id="source" :src="base+'/aies/'+imgList[0]?imgList[0]:'img?path=img'"></div>
+                    <div style="display:none"><img id="source" :src="base+'/ssm/'+imgList[0]?imgList[0]:'img?path=img'"></div>
                     <el-dialog
                 title="设置给分点属性"
                 :visible.sync="dialogVisible"
